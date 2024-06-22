@@ -158,3 +158,4 @@ C:\Users\swati\source\repos\SpecFlowProject\obj\Debug\net6.0\refint\SpecFlowProj
 C:\Users\swati\source\repos\SpecFlowProject\obj\Debug\net6.0\SpecFlowProject.pdb
 C:\Users\swati\source\repos\SpecFlowProject\obj\Debug\net6.0\SpecFlowProject.genruntimeconfig.cache
 C:\Users\swati\source\repos\SpecFlowProject\obj\Debug\net6.0\ref\SpecFlowProject.dll
+C:\Users\swati\source\repos\SpecFlowProject\obj\Debug\net6.0\SpecFlowProject.sourcelink.json

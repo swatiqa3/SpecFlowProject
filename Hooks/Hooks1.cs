@@ -5,6 +5,8 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using SpecFlowProject.Utils;
 using TechTalk.SpecFlow;
+using OpenQA.Selenium.Remote;
+using System.Security.Policy;
 
 namespace SpecFlowProject.Hooks
 {
@@ -55,8 +57,15 @@ namespace SpecFlowProject.Hooks
         [BeforeScenario(Order = 1)]
         public void FirstBeforeScenario(ScenarioContext scenarioContext)
         {
+
+            //Local Execution
+            //  IWebDriver driver = new ChromeDriver();
+            //driver.Manage().Window.Maximize();
+
             Console.WriteLine("Running before scenario...");
-            IWebDriver driver = new ChromeDriver();
+            ChromeOptions opt = new ChromeOptions();
+
+            RemoteWebDriver driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), opt);
             driver.Manage().Window.Maximize();
 
             _container.RegisterInstanceAs<IWebDriver>(driver);
